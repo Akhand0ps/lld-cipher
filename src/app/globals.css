@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+html {
+  font-size: 115%;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --background: #faf8f5;
+  --foreground: #1c1917;
+  --card: #ffffff;
+  --card-foreground: #1c1917;
+  --muted: #f0eee9;
+  --muted-foreground: #78716c;
+  --border: #e7e5e4;
+  --ring: #1c1917;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Scale arbitrary pixel font utilities by 15% to maintain consistent typography hierarchy */
+[class*="text-[10px]"] {
+  font-size: 11.5px !important;
+}
+[class*="text-[11px]"] {
+  font-size: 12.65px !important;
+}
+[class*="text-[13px]"] {
+  font-size: 15px !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Crisp monochromatic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+/* Developer-style Highlighters */
+.hl-yellow {
+  display: inline-block;
+  background-color: #fef08a; /* soft highlighter yellow */
+  border: 1px solid #facc15;
+  color: #09090b;
+  padding: 0.08rem 0.35rem;
+  border-radius: 2px;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 1.15;
+  vertical-align: baseline;
+  margin: 0 0.15rem;
+}
+
+.hl-blue {
+  display: inline-block;
+  background-color: #dbeafe; /* soft highlighter blue */
+  border: 1px solid #93c5fd;
+  color: #09090b;
+  padding: 0.08rem 0.35rem;
+  border-radius: 2px;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 1.15;
+  vertical-align: baseline;
+  margin: 0 0.15rem;
+}
+
+.hl-block-blue {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e293b;
+  padding: 0.6rem 0.9rem;
+  border-radius: 3px;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
