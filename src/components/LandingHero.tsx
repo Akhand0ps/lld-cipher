@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { Highlighter, HighlightBlock } from "./Highlighter";
+import { ArchitecturalPlaque } from "./ArchitecturalPlaque";
 
 interface LandingHeroProps {
   onOpenDocs?: () => void;
@@ -13,8 +14,13 @@ export const LandingHero: React.FC<LandingHeroProps> = ({ onOpenDocs }) => {
   return (
     <div className="flex-1 overflow-y-auto bg-[#faf8f5] flex flex-col justify-center">
       {/* Centered Hero Block */}
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-20 my-auto w-full text-center">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 py-6 sm:py-16 my-auto w-full text-center">
         <div className="space-y-5 sm:space-y-8">
+          {/* Architectural Stone Pediment Plaque featuring Official CipherSchools Logo */}
+          <div className="flex justify-center pb-1 sm:pb-2">
+            <ArchitecturalPlaque className="max-w-[280px] xs:max-w-[320px] sm:max-w-md md:max-w-lg" />
+          </div>
+
           {/* Main Headline */}
           <h1 className="text-2xl sm:text-5xl font-bold tracking-tight text-[#1c1917] leading-[1.3] sm:leading-[1.2] max-w-xl mx-auto font-serif">
             Low-Level Design practice has a{" "}
@@ -68,7 +74,7 @@ export const LandingHero: React.FC<LandingHeroProps> = ({ onOpenDocs }) => {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-[#e7e5e4] bg-white text-[#1c1917] hover:bg-[#f0eee9] text-xs font-medium transition cursor-pointer shadow-2xs active:scale-95"
               >
                 <span>Launch Parking Lot Challenge</span>
-                <ArrowRight className="h-3.5 w-3.5 text-[#78716c]" />
+                <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             )}
           </div>
