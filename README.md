@@ -1,10 +1,12 @@
 # 🏛️ LLD Studio — Diagnostic Low-Level Design Practice Platform
 
+[![Live Demo](https://img.shields.io/badge/Demo-cipherlld.vercel.app-blue?style=flat&logo=vercel)](https://cipherlld.vercel.app)
 [![Tests](https://img.shields.io/badge/domain_tests-10%2F10_passing-emerald)](./src/__tests__/domain.test.ts)
 [![Next.js](https://img.shields.io/badge/Next.js-16.4_Turbopack-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x_Strict-blue)](https://www.typescriptlang.org/)
 [![Deliverable](https://img.shields.io/badge/Assignment-CipherSchools_SDE_Intern-orange)](./CipherSchools.pdf)
 
+> 🌐 **Live Production Deployment:** **[cipherlld.vercel.app](https://cipherlld.vercel.app)**  
 > **Core Practice Loop:** `Select Problem → Structured Design → Immediate Pre-Persistence → Multi-Dimensional Evaluation → Inspect Progression Delta → Refactor & Retry`
 
 ---
